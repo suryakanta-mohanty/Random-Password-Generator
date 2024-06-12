@@ -28,3 +28,12 @@ function createPassword(){
 document.querySelector('.js-btn').addEventListener('click', ()=>{
   createPassword();
 });
+
+function copyPassword(){
+  passwordBox.select();
+  document.execCommand('copy');
+}
+
+document.querySelector('.js-copy-btn').addEventListener('click', ()=>{
+  copyPassword();
+});
