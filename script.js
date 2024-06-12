@@ -29,6 +29,12 @@ document.querySelector('.js-btn').addEventListener('click', ()=>{
   createPassword();
 });
 
+document.addEventListener('keypress', (event)=>{
+  if(event.key === 'g' || event.key === 'G'){
+    createPassword();
+  }
+});
+
 function copyPassword(){
   passwordBox.select();
   document.execCommand('copy');
