@@ -71,3 +71,19 @@ button{
 button:active{
   opacity: 70%;
 }
+
+@media screen and (max-width: 480px ) {
+  .container{
+    margin-left: 60px;
+  }
+
+  
+}
+
+@media screen and (max-width: 380px) {
+  .container{
+    margin-left: 35px;
+  }
+
+
+}
